@@ -103,6 +103,15 @@
 
             }
         }
+        public static int FactOfNum(int a)
+        {
+            int Fact = 1;
+            for (int i = 2; i <= a; i++)
+            {
+                Fact = Fact * i;
+            }
+            return Fact;
+        }
         static void Main(string[] args)
         {
             #region Q1 value type refrence value  type value
@@ -158,6 +167,10 @@
             //MinMaxArray(ref arr, out int max, out int min);
             //Console.WriteLine($"max = {max}");
             //Console.WriteLine($"min = {min}");
+            #endregion
+            #region Q7 factorial
+            //int a = int.Parse(Console.ReadLine());
+            //Console.WriteLine(FactOfNum(a));
             #endregion
         }
     }
