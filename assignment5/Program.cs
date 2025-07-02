@@ -85,6 +85,24 @@
             }
             return true;
         }
+        public static void MinMaxArray(ref int[] arr, out int max, out int min)
+        {
+            max = arr[0];
+            min = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > max)
+                {
+                    max = arr[i];
+                }
+                else if (arr[i] < min)
+                {
+                    min = arr[i];
+
+                }
+
+            }
+        }
         static void Main(string[] args)
         {
             #region Q1 value type refrence value  type value
@@ -135,7 +153,12 @@
             //    Console.WriteLine("false");
             //}
             #endregion
-
+            #region Q6 MinMaxArray, to return the minimum and maximum values stored in an array
+            //int[] arr = { 5, 6, 7, 8, 4, 9, 10 };
+            //MinMaxArray(ref arr, out int max, out int min);
+            //Console.WriteLine($"max = {max}");
+            //Console.WriteLine($"min = {min}");
+            #endregion
         }
     }
 }
