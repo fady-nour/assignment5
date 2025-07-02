@@ -50,6 +50,12 @@
             }
             return sum;
         }
+        public static void SumSub(int a,int b,out int sum ,out int sub)
+            {
+            sum = a + b ;
+            sub = a - b ;
+
+            }
         static void Main(string[] args)
         {
             #region Q1 value type refrence value  type value
@@ -76,7 +82,15 @@
             //SumArr2(ref num);
             //Console.WriteLine("after passing = " + num[2]);
             #endregion
-
+            #region Q3 result of summation and subtracting of two numbers
+            //Console.WriteLine("enter num 1");
+            // int x=int.Parse(Console.ReadLine());
+            //Console.WriteLine("enter num 1");
+            // int y=int.Parse(Console.ReadLine());
+            //SumSub(x, y, out int sum, out int sub);
+            //Console.WriteLine("Sum = " + sum);
+            //Console.WriteLine("Sub = " + sub);
+            #endregion
         }
     }
 }
