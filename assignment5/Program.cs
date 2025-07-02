@@ -72,6 +72,19 @@
            
             return sum;
         }
+        public static bool IsPrime(int n)
+        {
+            if (n <=1)
+            {
+                return false;
+            }
+            for (int i = 2; i < n; i++)
+            {
+                if (n % i == 0)
+                    return false;
+            }
+            return true;
+        }
         static void Main(string[] args)
         {
             #region Q1 value type refrence value  type value
@@ -111,6 +124,18 @@
             //string x = "25";
             //Console.WriteLine(Sumdigit(x));
             #endregion
+            #region Q5 Ispeime
+            //int a =int.Parse(Console.ReadLine());
+            //if (IsPrime(a))
+            //{
+            //    Console.WriteLine("true");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("false");
+            //}
+            #endregion
+
         }
     }
 }
