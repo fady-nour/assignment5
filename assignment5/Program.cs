@@ -112,6 +112,26 @@
             }
             return Fact;
         }
+        public static string ChangeChar(string s,int n,char c)
+        {
+        
+            char[] charr=s.ToCharArray();
+            charr[n]= c;
+            return new string(charr);
+
+
+        }
+        //another soultion
+        public static string ChangeChar1(string s,int n,char c)
+        {
+        
+           string before =s.Substring(0,n);
+            string after =s.Substring(n+1);
+            return before + c + after;  
+          
+
+
+        }
         static void Main(string[] args)
         {
             #region Q1 value type refrence value  type value
@@ -171,6 +191,17 @@
             #region Q7 factorial
             //int a = int.Parse(Console.ReadLine());
             //Console.WriteLine(FactOfNum(a));
+            #endregion
+            #region Q8 change character
+            //Console.WriteLine("enter string ");
+            //string s = Console.ReadLine();
+            //Console.WriteLine("enter position you want to convert ");
+            //int v = int.Parse(Console.ReadLine());
+            //Console.WriteLine("enter char you want to convert ");
+            //char c = char.Parse(Console.ReadLine());
+            //Console.WriteLine(ChangeChar(s, v, c));
+            //Console.WriteLine(ChangeChar1(s, v, c));
+
             #endregion
         }
     }
