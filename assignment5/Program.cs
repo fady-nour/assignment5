@@ -56,6 +56,22 @@
             sub = a - b ;
 
             }
+        public static int Sumdigit(string n)
+        {
+            int sum = 0;
+            int y = n.Length;
+            int a = Convert.ToInt32(n);
+            int r;
+            for (int i = 0; i < y; i++)
+            {
+               r=a % 10;
+                sum += r;
+                a /= 10;
+   
+            }
+           
+            return sum;
+        }
         static void Main(string[] args)
         {
             #region Q1 value type refrence value  type value
@@ -90,6 +106,10 @@
             //SumSub(x, y, out int sum, out int sub);
             //Console.WriteLine("Sum = " + sum);
             //Console.WriteLine("Sub = " + sub);
+            #endregion
+            #region Q4 the individual digits of a given number.
+            //string x = "25";
+            //Console.WriteLine(Sumdigit(x));
             #endregion
         }
     }
